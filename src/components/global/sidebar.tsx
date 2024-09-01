@@ -10,7 +10,7 @@ export default function SidebarComponent({
   links,
 }: {
   content: React.ReactNode;
-  links: { label: string; href: string; icon: React.ReactNode }[];
+  links: { label?: string; href?: string; icon?: React.ReactNode }[];
 }) {
   const [open, setOpen] = useState(false);
   return (
