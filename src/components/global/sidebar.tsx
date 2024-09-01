@@ -2,16 +2,55 @@ import { Sidebar, SidebarBody, SidebarLink } from '@/components/ui/sidebar';
 import { Logo, LogoIcon } from '@/components/utils/logo';
 import { cn } from '@/lib/utils';
 
-import { Github } from 'lucide-react';
+import {
+  Brush,
+  Github,
+  LayoutDashboard,
+  NotebookPen,
+  SquareCheck,
+  Timer,
+  User,
+} from 'lucide-react';
 import React, { useState } from 'react';
 
 export default function SidebarComponent({
   content,
-  links,
 }: {
   content: React.ReactNode;
-  links: { label?: string; href?: string; icon?: React.ReactNode }[];
 }) {
+  const links: Links = [
+    {
+      label: 'Dashboard',
+      href: '/app',
+      icon: <LayoutDashboard className='text-primary h-5 w-5 flex-shrink-0' />,
+    },
+    {
+      label: 'Draws',
+      href: '/app/draws',
+      icon: <Brush className='text-primary h-5 w-5 flex-shrink-0' />,
+    },
+    {
+      label: 'Notes',
+      href: '/app/notes',
+      icon: <NotebookPen className='text-primary h-5 w-5 flex-shrink-0' />,
+    },
+    {
+      label: 'To-do',
+      href: '/app/todos',
+      icon: <SquareCheck className='text-primary h-5 w-5 flex-shrink-0' />,
+    },
+    {
+      label: 'Timer',
+      href: '/app/timer',
+      icon: <Timer />,
+    },
+    {
+      label: 'Profile',
+      href: '/app/profile',
+      icon: <User />,
+    },
+  ];
+
   const [open, setOpen] = useState(false);
   return (
     <div
