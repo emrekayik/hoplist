@@ -13,6 +13,12 @@ import {
 } from 'lucide-react';
 import React, { useState } from 'react';
 
+type Link = {
+  label: string;
+  href: string;
+  icon: React.ReactElement;
+};
+
 export default function SidebarComponent({
   content,
 }: {
@@ -66,7 +72,7 @@ export default function SidebarComponent({
             {open ? <Logo /> : <LogoIcon />}
             <div className='mt-8 flex flex-col gap-2'>
               {links.map((link, idx) => (
-                <SidebarLink key={idx} link={link} />
+                <SidebarLink key={link.href} link={link} />
               ))}
             </div>
           </div>
