@@ -24,22 +24,7 @@ export default function Header() {
       <Link href='/app'>
         <Button>Go To App</Button>
       </Link>
-      {/*
-      <div className='mt-20'>
-        <CardSpotlight className='h-96 w-96'>
-          <p className='text-xl font-bold relative z-20 mt-2 text-white'>
-            Features
-          </p>
-          <div className='text-primary mt-4 relative z-20'>
-            <ul className='list-none  mt-2 space-y-2'>
-              <Step title='simple and minimal note taking' />
-              <Step title='' />
-            </ul>
-          </div>
-          <p className='text-primary mt-4 relative z-20 text-sm'>test</p>
-        </CardSpotlight>
-      </div>
-      */}
+
       <div className='mt-20'>
         <h1 className='text-2xl font-bold text-primary'>Features</h1>
         <StickyScroll content={content} />
