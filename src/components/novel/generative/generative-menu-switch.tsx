@@ -31,8 +31,8 @@ const GenerativeMenuSwitch = ({
         },
       }}
       className='flex w-fit max-w-[90vw] overflow-hidden rounded-md border border-muted bg-background shadow-xl'
-    >
-      {open && <AISelector open={open} onOpenChange={onOpenChange} />}
+     pluginKey={}>
+      {/*open && <AISelector open={open} onOpenChange={onOpenChange} />*/}
       {!open && (
         <Fragment>
           <Button
@@ -52,6 +52,3 @@ const GenerativeMenuSwitch = ({
 };
 
 export default GenerativeMenuSwitch;
-
-export class GenerativeMenuSwitch {
-}
