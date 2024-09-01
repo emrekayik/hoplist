@@ -18,7 +18,7 @@ export default function SidebarComponent({
 }: {
   content: React.ReactNode;
 }) {
-  const links: Links = [
+  const links = [
     {
       label: 'Dashboard',
       href: '/app',
@@ -65,7 +65,7 @@ export default function SidebarComponent({
           <div className='flex flex-col flex-1 overflow-y-auto overflow-x-hidden'>
             {open ? <Logo /> : <LogoIcon />}
             <div className='mt-8 flex flex-col gap-2'>
-              {links.map((link, idx: number) => (
+              {links.map((link, idx) => (
                 <SidebarLink key={idx} link={link} />
               ))}
             </div>
