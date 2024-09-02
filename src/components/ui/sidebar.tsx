@@ -157,12 +157,10 @@ export const MobileSidebar = ({
 export const SidebarLink = ({
   link,
   className,
-  key,
   ...props
 }: {
   link: Links;
   className?: string;
-  key?: string;
   props?: LinkProps;
 }) => {
   const { open, animate } = useSidebar();
