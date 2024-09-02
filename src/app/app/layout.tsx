@@ -1,6 +1,7 @@
 'use client';
 
 import SidebarComponent from '@/components/global/sidebar';
+import Transition from '@/components/global/transition';
 
 import {
   Brush,
@@ -18,8 +19,8 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main>
+    <Transition>
       <SidebarComponent content={children} />
-    </main>
+    </Transition>
   );
 }

@@ -48,12 +48,12 @@ export default function SidebarComponent({
     {
       label: 'Timer',
       href: '/app/timer',
-      icon: <Timer />,
+      icon: <Timer className='text-primary h-5 w-5 flex-shrink-0' />,
     },
     {
       label: 'Profile',
       href: '/app/profile',
-      icon: <User />,
+      icon: <User className='text-primary h-5 w-5 flex-shrink-0' />,
     },
   ];
 
