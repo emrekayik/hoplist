@@ -37,7 +37,7 @@ export default function Editor({ data, onChange, holder }) {
         ref.current.destroy();
       }
     };
-  }, []);
+  }, [data, holder, onChange]);
 
   return <div id={holder} className='prose max-w-full text-primary' />;
 }
