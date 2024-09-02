@@ -10,7 +10,7 @@ import React, { createContext, useContext, useState } from 'react';
 interface Links {
   label: string;
   href: string;
-  icon: React.JSX.Element | React.ReactNode;
+  icon?: React.JSX.Element | React.ReactNode;
 }
 
 interface SidebarContextProps {
